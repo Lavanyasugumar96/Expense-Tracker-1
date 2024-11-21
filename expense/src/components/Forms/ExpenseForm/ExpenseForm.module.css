@@ -1,0 +1,75 @@
+.formWrapper {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .formWrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .formWrapper h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #444;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .formWrapper form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .formWrapper input,
+  .formWrapper select {
+    background: #fff;
+    border: 0;
+    outline: 0;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 20px;
+    font-family: var(--font-body);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .formWrapper input:focus,
+  .formWrapper select:focus {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .formWrapper select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23999999' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 767px) {
+    .formWrapper form {
+      grid-template-columns: 1fr;
+    }
+  
+    .formWrapper h3 {
+      font-size: 28px;
+    }
+  
+    .formWrapper input,
+    .formWrapper select {
+      padding: 12px;
+    }
+  }
+  

@@ -1,0 +1,64 @@
+.button {
+    background: #e3e3e3;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 14px 36px;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .primary {
+    background: #f4bb4a;
+    color: #ffffff;
+  }
+  
+  .primary:hover {
+    background: #e0a843;
+  }
+  
+  .secondary {
+    background: #e3e3e3;
+    color: #000;
+    font-weight: 500;
+    width: fit-content;
+    padding: 12px 30px;
+  }
+  
+  .secondary:hover {
+    background: #d1d1d1;
+  }
+  
+  .success {
+    background: linear-gradient(90deg, #a8d848, #89e148);
+    color: #fff;
+  }
+  
+  .success:hover {
+    background: linear-gradient(90deg, #91c440, #77d042);
+  }
+  
+  .failure {
+    background: linear-gradient(90deg, #ff8a8a, #ff5c5c, #ff3838);
+    color: #fff;
+  }
+  
+  .failure:hover {
+    background: linear-gradient(90deg, #ff7373, #ff4d4d, #ff2323);
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .shadow:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  

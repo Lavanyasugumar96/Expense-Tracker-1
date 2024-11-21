@@ -1,0 +1,106 @@
+:root {
+  --primary-bg-color: #3b3b3b;
+  --secondary-bg-color: #9b9b9b;
+  --font-heading: "Ubuntu", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--primary-bg-color); /* Optional: Set a background color for the body */
+  color: #ffffff; /* Optional: Set default text color */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Inherit font styles from body */
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  margin: 0; /* Ensure headings have no default margin */
+}
+
+h1 {
+  font-size: 2.5rem; /* Adjust heading sizes as needed */
+}
+
+h2 {
+  font-size: 2rem; /* Adjust heading sizes as needed */
+}
+
+h3 {
+  font-size: 1.75rem; /* Adjust heading sizes as needed */
+}
+
+h4 {
+  font-size: 1.5rem; /* Adjust heading sizes as needed */
+}
+
+h5 {
+  font-size: 1.25rem; /* Adjust heading sizes as needed */
+}
+
+h6 {
+  font-size: 1rem; /* Adjust heading sizes as needed */
+}
+
+button {
+  cursor: pointer; /* Add pointer cursor for buttons */
+}
+
+p,
+a {
+  font-family: var(--font-body);
+  color: inherit; /* Ensure links inherit color */
+  text-decoration: none; /* Remove underline for links, can be adjusted based on preference */
+}
+
+a:hover {
+  text-decoration: underline; /* Optional: underline links on hover */
+}

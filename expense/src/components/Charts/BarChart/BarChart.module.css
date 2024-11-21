@@ -1,0 +1,39 @@
+.expenseChart h2 {
+    font-size: 32px;
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+  }
+  
+  .expenseChart h2:hover {
+    color: #f4bb4a;
+  }
+  
+  .barWrapper {
+    background: linear-gradient(135deg, #fff 20%, #f0f0f0);
+    border-radius: 15px;
+    padding: 10px 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .barWrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 767px) {
+    .expenseChart h2 {
+      text-align: center;
+      font-size: 28px;
+    }
+  
+    .barWrapper {
+      padding: 8px 20px;
+    }
+  }
+  
